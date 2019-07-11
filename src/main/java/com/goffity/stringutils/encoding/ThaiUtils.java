@@ -2,6 +2,10 @@ package com.goffity.stringutils.encoding;
 
 public class ThaiUtils {
 
+    private ThaiUtils() {
+        throw new IllegalStateException("ThaiUtils Class");
+    }
+
     public static String convertStringToUCS2(String s) {
         StringBuilder converted = new StringBuilder();
         for (int i = 0; i < s.length(); i++) {
@@ -39,7 +43,7 @@ public class ThaiUtils {
         return strBuilder.toString();
     }
 
-    public static String Unicode2ASCII(String unicode) {
+    public static String unicode2ASCII(String unicode) {
 
         StringBuilder ascii = new StringBuilder(unicode);
 
@@ -59,7 +63,7 @@ public class ThaiUtils {
 
     }
 
-    public static String ASCII2Unicode(String ascii) {
+    public static String ascii2Unicode(String ascii) {
 
         StringBuilder unicode = new StringBuilder(ascii);
 

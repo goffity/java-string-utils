@@ -13,9 +13,7 @@ public class StringUtils {
     public boolean isEmptyOrNull(String string) {
         boolean ret = false;
 
-        if (string == null) {
-            ret = true;
-        } else if (string.trim().length() == 0) {
+        if (string == null || string.trim().length() == 0) {
             ret = true;
         }
 
