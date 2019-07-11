@@ -48,7 +48,7 @@ public class ThaiUtilsTest {
         System.out.println("testUnicode2ASCII");
 
         String exp = "ÀÒÉÒä·Â";
-        String result = ThaiUtils.Unicode2ASCII(str);
+        String result = ThaiUtils.unicode2ASCII(str);
 
         System.out.println(result);
 
@@ -60,7 +60,7 @@ public class ThaiUtilsTest {
         System.out.println("testASCII2Unicode");
 
         String exp = "ภาษาไทย";
-        String result = ThaiUtils.ASCII2Unicode(str);
+        String result = ThaiUtils.ascii2Unicode(str);
 
         System.out.println(result);
 
